@@ -1,0 +1,60 @@
+body{
+    background-image: url("purple-palm-tree.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(253, 122, 61);
+}
+#bg {
+    background-color: rgb(47, 46, 48);
+    height: 100%;
+    width:  100%;
+    position: absolute;
+    top:0%;
+    left: 0%;
+    z-index: -1;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.main-box {
+    background-color:black;
+    opacity: 50%;
+    height: 450px;
+    width: 700px;
+    padding: 2.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-box {
+    background-color: transparent;
+    border: 1px solid rgb(253, 122, 61);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;   
+}
+h2  {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+p   {
+    font-size: 1.5rem;
+    animation: text 2s cubic-bezier(0.44, 0.21, 0.78, 1.19) forwards; 
+}
+@keyframes text {
+    0% {transform: translate(0);   
+        opacity: 0;
+    }
+    100% {transform: translateY(-650%);   
+         opacity: 100%; 
+    }
+}
